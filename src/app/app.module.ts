@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './View/inicio/inicio.component';
@@ -18,7 +17,7 @@ import { EjemploComponent } from './View/ejemplo/ejemplo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ColorPickerModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
