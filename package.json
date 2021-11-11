@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "lite": "lite-serve",
+    "postinstall": "ng build --prod"
   },
   
   "private": true,
