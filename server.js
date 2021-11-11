@@ -3,7 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/dist/ng-blog'));
-app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/ng-blog/index.html'));
-});
+app.use(express.static('./dist/prueba'));
+
+app.get('/*',(req,res) =>
+    res.sendFile('index.html',{root: 'dist/angular-heroku/'}),
+);
+
+app.listen(process.env.PORT || 8080);
