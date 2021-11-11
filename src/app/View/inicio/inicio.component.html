@@ -1,0 +1,89 @@
+
+  <div class=" container InicioCarta">
+    <br /><br />
+    <div class="card mx-auto col-md-4 ">
+      <div class="card-header text-center ">
+        <h4>Iniciar Sesión</h4>
+      </div>
+      <div class="card-body px-4">
+        <form>
+          <label>Correo electronico</label>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Correo electronico" aria-label="mail"
+              aria-describedby="basic-addon1" required>
+          </div>
+          <label>Contraseña</label>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="Password" aria-label="password"
+              aria-describedby="basic-addon1" required>
+          </div>
+          <div class="card-footer text-center pb-0" style="border: 0; background-color: transparent;">
+            <button class="btn btn-primary ">Iniciar Sesión</button>
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <h6 class="py-3">Registrate</h6>
+            </a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title " id="exampleModalLabel">Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+          <form>
+            <label>Nombre</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Nombre " aria-label="name" pattern="[a-zA-Z]{3,19}"
+                minlength="3" maxlength="19" title="Ingrese solo letras, entre 3 y 19 caracteres maximo"
+                aria-describedby="basic-addon1" required>
+            </div>
+
+            <label>Nickname</label>
+            <div class="input-group mb-3">
+
+              <input type="text" class="form-control" placeholder="Nickname" aria-label="nickname"
+                aria-describedby="basic-addon1" required>
+            </div>
+
+
+            <label>Correo electronico</label>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Correo electronico" aria-label="mail"
+                aria-describedby="basic-addon1" required>
+            </div>
+
+            <label>Contraseña</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="Password" aria-label="password"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary col-md-12">Registrarse</button>
+              </div>
+
+              <div class="col-md-6">
+                <button type=" button" class="btn btn-secondary col-md-12" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
